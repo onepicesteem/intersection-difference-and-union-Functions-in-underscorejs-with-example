@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://underscorejs.org/underscore-min.js"></script>
+    <script src="script.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <!--Adding New Student-->
+            <form>
+                <div class="form-group">
+                  <label>Student No</label>
+                  <input type="text" class="form-control" id="inputNo"/>
+                </div>
+                <div class="form-group">
+                  <label >Student Name</label>
+                  <input type="text" class="form-control" id="inputName"/>
+                </div>
+                <div class="dropdown form-group">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="btnClub" data-toggle="dropdown">Clubs
+                    <span class="caret"></span></button>
+                    <ul id="ulClub"class="dropdown-menu">
+                      <li><a href="#">Swimming</a></li>
+                      <li><a href="#">Football</a></li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary" id="btnSubmit">Submit</button>
+                </div>
+              </form>
+              <hr/>
+              <!--Underscorejs Functions-->
+              <div class="row">
+                <div class="col-md-3"><button class="btn btn-success" id="btnIntersection">Intersection</button></div>
+                <div class="col-md-3"><button class="btn btn-warning" id="btnDifferenceF">Difference Football</button></div>
+                <div class="col-md-3"><button class="btn btn-warning" id="btnDifferenceS">Difference Swimming</button></div>
+                <div class="col-md-3"><button class="btn btn-danger" id="btnUnion">Union</button></div>
+              </div>
+        </div>
+        <div>
+            <!--Student List-->
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-group" id="ulList">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
